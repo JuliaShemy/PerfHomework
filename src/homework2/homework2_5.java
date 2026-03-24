@@ -23,8 +23,6 @@ public class homework2_5 {
             }
 
             System.out.print("Сумма цифр от 1 до введенного числа = " + sum);
-
-
         }
     }
 }

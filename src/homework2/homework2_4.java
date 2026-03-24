@@ -11,6 +11,5 @@ public class homework2_4 {
             System.out.print(i + " ");
             i += 7;
         }
-
     }
 }
