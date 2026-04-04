@@ -1,20 +1,34 @@
 package homework4_1;
 
 public class CreditCard {
-    int numberCheck;
+    int cardNumber;
     double balance;
 
     public CreditCard(int numberCheck, double balance) {
-        this.numberCheck = numberCheck;
+        this.cardNumber = numberCheck;
         this.balance = balance;
     }
-    public double addAmount(double a) {
-        return balance += a;
+    public double addAmount(double amount) {
+        if (amount <= 0){
+            System.out.println("Сумма внесения должна быть больше 0");
+            return  balance;
+        }
+       balance = balance + amount;
+        return balance;
     }
-    public double reduceAmount(double b) {
-        return balance -= b;
+    public double withdrawAmount(double amount) {
+        if (amount<=0){
+            System.out.println("Сумма снятия должна быть больше 0");
+            return balance;
+        }
+        if (amount>balance){
+            System.out.println("Недостаточно средств на карте " + cardNumber);
+            return balance;
+        }
+        balance = balance - amount;
+        return balance;
     }
     public void infoCreditCard() {
-        System.out.println("Баланс крты с номером " + numberCheck + " равен " + balance);
+        System.out.println("Баланс карты с номером " + cardNumber + " равен " + balance);
     }
 }

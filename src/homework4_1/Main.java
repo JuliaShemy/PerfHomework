@@ -9,15 +9,15 @@ package homework4_1;
 Тестовый сценарий для проверки: Положите деньги на первые две карточки и
 снимите с третьей. Выведите на экран текущее состояние всех трех карточек.
  */
-public class main {
+public class Main {
     public static void main(String[] args) {
         CreditCard creditCard1 = new CreditCard(123456, 1000.00);
         CreditCard creditCard2 = new CreditCard(235467, 1500.00);
         CreditCard creditCard3 = new CreditCard(673421, 5000.00);
 // тестовый сценарий
-        creditCard1.addAmount(100.00);
+        creditCard1.addAmount(-100.00);
         creditCard2.addAmount(200.00);
-        creditCard3.reduceAmount(300.00);
+        creditCard3.withdrawAmount(6300.00);
 
         creditCard1.infoCreditCard();
         creditCard2.infoCreditCard();

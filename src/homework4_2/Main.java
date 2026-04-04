@@ -9,7 +9,7 @@ package homework4_2;
 какого номинала выдаётся сумма. Создать конструктор с тремя параметрами
 -количеством купюр каждого номинала
  */
-public class main {
+public class Main {
     public static void main(String[] args) {
         CashDispenser cashDispenser = new CashDispenser(10, 5, 2);
         cashDispenser.addDenomination(2, 1, 3);
