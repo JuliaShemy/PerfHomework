@@ -30,6 +30,7 @@ public class Main {
         scanner.close();
     }
 
+    // 2. несколько catch
     public static void arrayExemple() {
         try {
             int[] array = new int[2];
@@ -41,6 +42,7 @@ public class Main {
         }
     }
 
+    // 3. multi-catch
     public static void multiCatchExample() {
         try {
             String str = null;
@@ -50,6 +52,7 @@ public class Main {
         }
     }
 
+    // 4. try-catch-finally
     public static void finallyExample() {
         try {
             int[] array = new int[3];
